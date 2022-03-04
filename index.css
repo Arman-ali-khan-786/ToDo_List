@@ -1,0 +1,102 @@
+     * {
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0;
+      }
+      .container {
+        text-align: center;
+        padding: 24px;
+      }
+      h1 {
+        margin-bottom: 28px;
+        color: blue;
+      }
+      .cnt-top {
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: space-around;
+      }
+      .elementAdd {
+        width: 60%;
+        border: none;
+        outline: none;
+        padding: 12px;
+        font-size: 24px;
+        background-color: rgb(186, 238, 235);
+        border-radius: 8px;
+        box-shadow: 2px 2px 8px rgb(54, 42, 42);
+      }
+      .btn {
+        width: 120px;
+        padding: 8px;
+        font-weight: bolder;
+        color: white;
+        font-size: 24px;
+        border: none;
+        box-shadow: 2px 2px 8px rgb(72, 109, 114);
+        border-radius: 6px;
+        background-color: rgb(104, 235, 235);
+        transition: transform .3s ease-in-out;
+      }
+      #add:hover {
+        background-color: green;
+        transform: scale(1.2);
+      }
+      #remove:hover {
+        background-color: red;
+        transform: scale(1.2);
+      }
+      .listbox {
+        width: 90%;
+        margin: 40px auto;
+        padding: 10px;
+      }
+      #list {
+        display: flex;
+        flex-direction: column;
+      }
+      .items {
+        width: 100%;
+        list-style-type: none;
+        background-color: black;
+        box-shadow: 2px 4px 8px wheat;
+        padding: 16px;
+        margin: 10px auto;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 40px;
+
+      }
+      .items-content{
+        width: 70%;
+        background-color: aqua;
+        overflow-wrap: break-word;
+      }
+      .items-content>p{
+        font-size: 22px;
+        padding: 8px;
+        color: aliceblue;
+        font-weight: bolder;
+        text-align: left;
+
+      }
+      .items-btns{
+        width: 26%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .btn-edit{
+        max-height: fit-content;
+        background-color: rgb(0, 132, 255);
+        font-size: 19px;
+        transition: transform linear ease-in-out;
+      }
+      .btn-delete{
+        min-height: fit-content;
+        background-color: red;
+        font-size: 19px;
+      }
+      .btn-edit:hover,.btn-delete:hover{
+        transform: scale(.9);
+      }
